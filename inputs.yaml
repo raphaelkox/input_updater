@@ -2,4 +2,4 @@ inputs:
   - name: "Jump"
     key: "Space"
   - name: "Interact"
-    key: "Q"
+    key: "Z"

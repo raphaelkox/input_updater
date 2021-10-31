@@ -31,8 +31,9 @@ func main() {
 		fmt.Println("Failed unmarshalling inputs.yaml")
 	}
 
-	os.Truncate("./InputManagerMethods.cs", 0)
-	file, err := os.OpenFile("./InputManagerMethods.cs", os.O_CREATE|os.O_WRONLY, 0644)
+	filePath := "../nothome/Assets/Scripts/InputManagerMethods.cs"
+	os.Truncate(filePath, 0)
+	file, err := os.OpenFile(filePath, os.O_CREATE|os.O_WRONLY, 0644)
 	datawriter := bufio.NewWriter(file)
 
 	_, _ = datawriter.WriteString(using)
